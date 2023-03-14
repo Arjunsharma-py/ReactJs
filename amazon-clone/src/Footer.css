@@ -1,0 +1,17 @@
+.footer {
+  background-color: #131a22;
+  max-width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-family: inherit;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.footer_policy > span {
+  padding: 0px 5px;
+}
+
+.footer_copyright {
+  padding-top: 4px;
+}
