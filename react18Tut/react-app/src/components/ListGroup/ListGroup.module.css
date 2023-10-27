@@ -1,0 +1,10 @@
+.list-group {
+  list-style: none;
+  padding: 3;
+}
+
+.container {
+  background-color: rgb(179, 214, 107);
+  color: rgb(77, 99, 63);
+  font-weight: 500;
+}
