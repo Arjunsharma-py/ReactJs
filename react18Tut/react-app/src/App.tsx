@@ -1,11 +1,15 @@
 import "./App.css";
-import { useEffect, useRef, useState } from "react";
-import { Form } from "./components/Form";
-import ProductList from "./components/ProductList";
+import PostList from "./components/ReactQuery/PostList";
+import Test from "./components/ReactQuery/Test";
+// import { useEffect, useRef, useState } from "react";
+// import { Form } from "./components/Form";
+// import ProductList from "./components/ProductList";
 // import axios, { AxiosError, CanceledError } from "axios";
-import { CanceledError } from "./services/api-client";
-import userService, { User } from "./services/user-service";
-import useUsers from "./hooks/useUsers";
+// import { CanceledError } from "./services/api-client";
+// import userService, { User } from "./services/user-service";
+// import useUsers from "./hooks/useUsers";
+import ToDoList from "./components/ReactQuery/ToDoList";
+import TodoForm from "./components/ReactQuery/TodoForm";
 
 // import { Alert } from "./components/Alert";
 // import Buttons from "./components/Buttons";
@@ -18,42 +22,42 @@ import useUsers from "./hooks/useUsers";
 // const disconnect = () => console.log("disconnecting");
 
 function App() {
-  const { users, error, loading, setUsers, setError } = useUsers();
+  // const { users, error, loading, setUsers, setError } = useUsers();
 
-  const deleteUser = (user: User) => {
-    const originalUsers = [...users];
-    setUsers(users.filter((u) => u.id !== user.id));
+  // const deleteUser = (user: User) => {
+  //   const originalUsers = [...users];
+  //   setUsers(users.filter((u) => u.id !== user.id));
 
-    userService.delete(user.id).catch((err) => {
-      setError(err.message);
-      setUsers(originalUsers);
-    });
-  };
+  //   userService.delete(user.id).catch((err) => {
+  //     setError(err.message);
+  //     setUsers(originalUsers);
+  //   });
+  // };
 
-  const addUser = () => {
-    const originalUsers = [...users];
-    const newUser = { id: 0, name: "Mosh" };
-    setUsers([newUser, ...users]);
+  // const addUser = () => {
+  //   const originalUsers = [...users];
+  //   const newUser = { id: 0, name: "Mosh" };
+  //   setUsers([newUser, ...users]);
 
-    userService
-      .create(newUser)
-      .then(({ data: savedUsers }) => setUsers([savedUsers, ...users]))
-      .catch((err) => {
-        setError(err.message);
-        setUsers(originalUsers);
-      });
-  };
+  //   userService
+  //     .create(newUser)
+  //     .then(({ data: savedUsers }) => setUsers([savedUsers, ...users]))
+  //     .catch((err) => {
+  //       setError(err.message);
+  //       setUsers(originalUsers);
+  //     });
+  // };
 
-  const updateUser = (user: User) => {
-    const originalUsers = [...users];
-    const updatedUser = { ...user, name: user.name + "!" };
-    setUsers(users.map((u) => (u.id === user.id ? updatedUser : u)));
+  // const updateUser = (user: User) => {
+  //   const originalUsers = [...users];
+  //   const updatedUser = { ...user, name: user.name + "!" };
+  //   setUsers(users.map((u) => (u.id === user.id ? updatedUser : u)));
 
-    userService.modify(updatedUser).catch((err) => {
-      setError(err.message);
-      setUsers(originalUsers);
-    });
-  };
+  //   userService.modify(updatedUser).catch((err) => {
+  //     setError(err.message);
+  //     setUsers(originalUsers);
+  //   });
+  // };
 
   // useEffect(() => {
   //   const fetchUsers = async () => {
@@ -138,7 +142,7 @@ function App() {
   //   </div>
   // );
 
-  return <Form></Form>;
+  // return <Form></Form>;
 
   // const item = ["Hi", "Hey", "Hello"];
 
@@ -235,6 +239,17 @@ function App() {
   //     </ExpandableText>
   //   </>
   // );
+
+  //  ___________          Part-2               ___________
+
+  return (
+    <>
+      <TodoForm />
+      <ToDoList />
+      {/* <PostList /> */}
+      {/* <Test /> */}
+    </>
+  );
 }
 
 export default App;
