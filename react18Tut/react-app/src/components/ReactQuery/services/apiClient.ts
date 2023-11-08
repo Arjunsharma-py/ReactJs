@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Todo } from "../hooks/useTodos";
 
 const axiosInstance = axios.create({
   baseURL: "https://jsonplaceholder.typicode.com",
