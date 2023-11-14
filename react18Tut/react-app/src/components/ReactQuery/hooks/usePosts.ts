@@ -18,7 +18,7 @@ export interface PostQuery {
 }
 
 const usePosts = (query: PostQuery) => {
-  const fetchPosts = ({ pageParam }) => {
+  const fetchPosts = ({ pageParam }: any) => {
     return axios
       .get<Post[]>("https://jsonplaceholder.typicode.com/posts", {
         params: {

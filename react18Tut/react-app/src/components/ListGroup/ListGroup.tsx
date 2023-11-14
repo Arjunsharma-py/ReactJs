@@ -16,9 +16,9 @@ interface Props {
   items: string[];
 }
 
-interface ListItemProps {
-  active: string;
-}
+// interface ListItemProps {
+//   active: string;
+// }
 
 function ListGroup({ heading, items }: Props) {
   return (

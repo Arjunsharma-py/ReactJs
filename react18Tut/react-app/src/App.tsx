@@ -1,6 +1,18 @@
+// import { useReducer } from "react";
 import "./App.css";
-import PostList from "./components/ReactQuery/PostList";
-import Test from "./components/ReactQuery/Test";
+// import Counter from "./components/state-management/Counter";
+// import LoginStatus from "./components/state-management/LoginStatus";
+// import TaskList from "./components/state-management/tasks/TaskList";
+// import taskReducer from "./components/state-management/tasks/taskReducer";
+import NavBar from "./components/state-management/NavBar";
+// import TaskContext from "./components/state-management/tasks/taskContext";
+import HomePage from "./components/state-management/HomePage";
+// import authReducer from "./components/state-management/reducers/authReducer";
+// import AuthContext from "./components/state-management/contexts/authContext";
+import AuthProvider from "./components/state-management/auth/AuthProvider";
+import { TaskProvider } from "./components/state-management/tasks";
+// import PostList from "./components/ReactQuery/PostList";
+// import Test from "./components/ReactQuery/Test";
 // import { useEffect, useRef, useState } from "react";
 // import { Form } from "./components/Form";
 // import ProductList from "./components/ProductList";
@@ -8,8 +20,8 @@ import Test from "./components/ReactQuery/Test";
 // import { CanceledError } from "./services/api-client";
 // import userService, { User } from "./services/user-service";
 // import useUsers from "./hooks/useUsers";
-import ToDoList from "./components/ReactQuery/ToDoList";
-import TodoForm from "./components/ReactQuery/TodoForm";
+// import ToDoList from "./components/ReactQuery/ToDoList";
+// import TodoForm from "./components/ReactQuery/TodoForm";
 
 // import { Alert } from "./components/Alert";
 // import Buttons from "./components/Buttons";
@@ -242,13 +254,25 @@ function App() {
 
   //  ___________          Part-2               ___________
 
+  // const [tasks, taskDispatch] = useReducer(taskReducer, []);
+  // const [user, authDispatch] = useReducer(authReducer, "");
+
   return (
-    <>
-      <TodoForm />
-      <ToDoList />
-      {/* <PostList /> */}
-      {/* <Test /> */}
-    </>
+    // <TodoForm />
+    // <ToDoList />
+    // <PostList />
+    // <Test />
+    // <Counter />
+    // <TaskList />
+    // <LoginStatus />
+    // <AuthContext.Provider value={{ user, dispatch: authDispatch }}>
+    <AuthProvider>
+      <TaskProvider>
+        <NavBar />
+        <HomePage />
+      </TaskProvider>
+    </AuthProvider>
+    // </AuthContext.Provider>
   );
 }
 

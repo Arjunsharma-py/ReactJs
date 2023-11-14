@@ -1,5 +1,4 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
-import React from "react";
 
 function Test() {
   const fetchProjects = async ({ pageParam }: any) => {
@@ -24,7 +23,7 @@ function Test() {
     queryFn: fetchProjects,
     initialPageParam: 0,
     getNextPageParam: (lastPage, pages) => {
-      return 2;
+      return lastPage.length + pages;
     },
     staleTime: 10 * 1000,
   });
