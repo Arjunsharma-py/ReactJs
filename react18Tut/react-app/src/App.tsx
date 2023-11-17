@@ -1,6 +1,5 @@
 // import { useReducer } from "react";
 import "./App.css";
-// import Counter from "./components/state-management/Counter";
 // import LoginStatus from "./components/state-management/LoginStatus";
 // import TaskList from "./components/state-management/tasks/TaskList";
 // import taskReducer from "./components/state-management/tasks/taskReducer";
@@ -11,6 +10,7 @@ import HomePage from "./components/state-management/HomePage";
 // import AuthContext from "./components/state-management/contexts/authContext";
 import AuthProvider from "./components/state-management/auth/AuthProvider";
 import { TaskProvider } from "./components/state-management/tasks";
+import Counter from "./components/state-management/counter/Counter";
 // import PostList from "./components/ReactQuery/PostList";
 // import Test from "./components/ReactQuery/Test";
 // import { useEffect, useRef, useState } from "react";
@@ -262,16 +262,16 @@ function App() {
     // <ToDoList />
     // <PostList />
     // <Test />
-    // <Counter />
+    <Counter />
     // <TaskList />
     // <LoginStatus />
     // <AuthContext.Provider value={{ user, dispatch: authDispatch }}>
-    <AuthProvider>
-      <TaskProvider>
-        <NavBar />
-        <HomePage />
-      </TaskProvider>
-    </AuthProvider>
+    // <AuthProvider>
+    //   <TaskProvider>
+    //     <NavBar />
+    //     <HomePage />
+    //   </TaskProvider>
+    // </AuthProvider>
     // </AuthContext.Provider>
   );
 }
