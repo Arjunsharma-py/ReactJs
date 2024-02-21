@@ -8,9 +8,8 @@ import NavBar from "./components/state-management/NavBar";
 import HomePage from "./components/state-management/HomePage";
 // import authReducer from "./components/state-management/reducers/authReducer";
 // import AuthContext from "./components/state-management/contexts/authContext";
-import AuthProvider from "./components/state-management/auth/AuthProvider";
-import { TaskProvider } from "./components/state-management/tasks";
 import Counter from "./components/state-management/counter/Counter";
+import { TaskProvider } from "./components/state-management/tasks";
 // import PostList from "./components/ReactQuery/PostList";
 // import Test from "./components/ReactQuery/Test";
 // import { useEffect, useRef, useState } from "react";
@@ -262,15 +261,15 @@ function App() {
     // <ToDoList />
     // <PostList />
     // <Test />
-    <Counter />
     // <TaskList />
     // <LoginStatus />
     // <AuthContext.Provider value={{ user, dispatch: authDispatch }}>
     // <AuthProvider>
-    //   <TaskProvider>
-    //     <NavBar />
-    //     <HomePage />
-    //   </TaskProvider>
+    <TaskProvider>
+      <Counter />
+      <NavBar />
+      <HomePage />
+    </TaskProvider>
     // </AuthProvider>
     // </AuthContext.Provider>
   );

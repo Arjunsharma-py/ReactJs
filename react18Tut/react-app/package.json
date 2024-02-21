@@ -21,11 +21,14 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "7.43",
     "react-icons": "^4.8.0",
+    "react-router-dom": "^6.22.1",
+    "simple-zustand-devtools": "^1.1.0",
     "styled-components": "^6.0.0-rc.1",
     "zod": "^3.21.4",
     "zustand": "^4.4.6"
   },
   "devDependencies": {
+    "@types/node": "^20.11.19",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
