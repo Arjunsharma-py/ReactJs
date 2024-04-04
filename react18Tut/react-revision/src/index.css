@@ -10,6 +10,9 @@
   width: 100%;
   background-color: #060f14;
   padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-container {
@@ -43,6 +46,77 @@
   text-align: center;
   color: rgb(238, 237, 237);
   padding: 1rem 8rem;
+}
+
+.heading-chatbot {
+  color: white;
+  margin-bottom: 0.7rem;
+}
+
+/* -------------------Display chatbot---------------- */
+
+.display-section-chat {
+  width: 80%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.display-section-chat-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-section-chat-user {
+  align-items: flex-end;
+}
+
+.display-section-chat-user p {
+  background-image: linear-gradient(to right, #7cdf8e, #4bb767c5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.display-section-chat-bot {
+  align-items: flex-start;
+}
+
+.display-section-chat-bot p {
+  background-image: linear-gradient(to right, #d4d6d5, #afafafc5, #d4d6d5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* -----------------------Prompt chatbot-------------------- */
+
+.prompt-form-section {
+  width: 90%;
+  margin-top: 0.5rem;
+}
+
+.prompt-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prompt-form input {
+  width: 83%;
+  padding: 0.7rem;
+  border: 0px;
+  outline: none;
+  border-radius: 2rem;
+}
+
+.prompt-form button {
+  padding: 0.7rem;
+  border-radius: 2rem;
+  border: 0px;
+  margin-left: 0.6rem;
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #7cdf8e, #4bb767c5);
 }
 
 /* ------------Footer------------- */
