@@ -45,7 +45,7 @@ const Chat = () => {
         {
           id: Math.random(),
           isUser: false,
-          message: "This is bot from other side",
+          message: "This is bot from other side ",
         },
       ]);
     } catch (error) {
