@@ -1,10 +1,13 @@
 import { useState } from "react";
-import logo from "../assets/logo.webp";
+import logo from "../../assets/logo.webp";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { openModal } from "../../features/user/modalSlice";
 
 const Navbar = () => {
   const [toogleMenu, setToggleMenu] = useState(false);
+  const dispatch = useDispatch();
 
   return (
     <div className="navbar-bg">
@@ -81,7 +84,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-button">
-          <button type="button">
+          <button type="button" onClick={() => dispatch(openModal("login"))}>
             <FaUser />
             Log In
           </button>
