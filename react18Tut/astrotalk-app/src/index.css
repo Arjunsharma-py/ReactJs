@@ -6,6 +6,10 @@
 :root {
   --white-color: #ffffffe0;
   --red-color: #e1353c;
+  --yellow-color: #fdba16;
+
+  --yellow-color-hover: #f5af00;
+  --red-color-hover: #c4262b;
 }
 
 /* ------------------Navbar--------------- */
@@ -15,7 +19,7 @@ a {
 
 .navbar-bg {
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   position: fixed;
   top: 0;
 }
@@ -80,7 +84,7 @@ a {
   padding: 0.3rem 1rem;
   border: 0px;
   border-radius: 1rem;
-  color: black;
+  color: white;
   font-weight: bolder;
   font-size: 15px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -89,12 +93,11 @@ a {
   outline: none;
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.096), 0 6px 6px rgba(0, 0, 0, 0.116);
-  background-color: #f0df20;
+  background-color: var(--yellow-color);
 }
 
 .navbar-button button:hover {
-  color: black;
-  background-color: #f0df20;
+  background-color: var(--yellow-color-hover);
 }
 
 .navbar-menu {
@@ -204,8 +207,8 @@ a {
   height: 1rem;
   border-radius: 10rem;
   position: relative;
-  right: -49rem;
-  top: -11rem;
+  right: -43rem;
+  top: -11.5rem;
 }
 
 .closing-circle button {
@@ -237,6 +240,7 @@ a {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.096);
+  height: 26rem;
   background-color: white;
 }
 
@@ -247,18 +251,21 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0rem 4rem;
 }
 
 .display-image-container img {
-  width: 75%;
+  width: 13rem;
 }
 
 .login-bar {
   background-color: #e1353c;
-  height: 50%;
+  height: 100%;
+  display: flex;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-bar-container {
@@ -320,6 +327,16 @@ a {
   border-radius: 0.5rem;
   margin: 0.5rem 0rem;
   box-shadow: 0 1px 2px rgb(0 0 0 / 34%), 0 1px 2px rgba(0, 0, 0, 0.116);
+}
+
+.name-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name-field input {
+  width: 8.5rem;
 }
 
 .mobile-form-container button,
