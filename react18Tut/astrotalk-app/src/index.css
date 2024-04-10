@@ -19,7 +19,7 @@ a {
 
 .navbar-bg {
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   top: 0;
 }
@@ -139,10 +139,10 @@ a {
 
 .section-bg {
   background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.685),
-    black,
-    rgba(0, 0, 0, 0.671)
+    to bottom,
+    rgb(253 186 22),
+    #f6f94d,
+    rgb(253 180 0)
   );
   width: 100%;
   margin-top: 4.7rem;
@@ -150,42 +150,196 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 560px;
 }
 
-.intro-container {
+.horoscope-heading {
+  margin-bottom: 2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* ---------------------services------------------ */
+
+.services-heading {
+  margin: 2rem;
+  margin-left: 8rem;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.services {
   display: flex;
   flex-direction: row;
-  background-image: linear-gradient(to right, yellow, white, yellow);
-  width: 80%;
-  border-radius: 1rem;
-  margin: 0.5rem;
-}
-
-.intro-image {
-  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.intro-image img {
-  width: 70%;
+.services-bg {
+  display: flex;
+  flex-direction: row;
+  width: 60rem;
+  background-color: #ffc235;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
 }
 
-.intro-chat {
+.services-box {
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-box {
+  background: #ffffff;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 15%;
+}
+
+.img-box:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.274);
+}
+
+.img-box img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 15%;
+  object-fit: none;
+}
+
+.services-box span {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* -----------------------profile card---------------------- */
+
+.profile-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-info h2,
+.user-info p {
+  margin: 5px 0;
+}
+
+.contact-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #45a049;
+}
+
+/* ------------------------------faq---------------------- */
+
+.faq-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  margin-left: 2rem;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  padding: 3rem 6rem;
+  margin: 4rem 0rem;
 }
 
-.intro-chat button {
-  color: white;
-  background-color: black;
-  padding: 0.5rem 0.8rem;
-  border: 0px;
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq h3 {
+  font-weight: 600;
+  color: rgb(63, 63, 63);
+  margin: 0.5rem 0rem;
+}
+
+.faq p {
+  color: rgb(128, 128, 128);
+  margin: 1rem 0rem;
+}
+
+/* ---------------------AstroSlider--------------------- */
+
+.astro-slider-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* ------------------card-slider------------------ */
+
+.slider-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.zodiac-card {
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zodiac-card .img {
+  background: #ffffff;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+
+.zodiac-card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.zodiac-card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+
+.zodiac-card button {
+  color: #6a6d78;
+  font-size: 1.2rem;
+  border: 1px solid yellow;
   border-radius: 1rem;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--yellow-color-hover);
+  padding: 0.3rem 0.5rem;
 }
 
 /* responsive */

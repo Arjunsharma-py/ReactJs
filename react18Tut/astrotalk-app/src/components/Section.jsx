@@ -1,21 +1,32 @@
 import React from "react";
-import frontImage from "../assets/arjun-kapoor-uhd.webp";
+import CardSlider from "./CardSlider";
+import Services from "./Services";
+import Faq from "./Faq";
+import ProfileCard from "./ProfileCard";
+import AstroSlider from "./AstroSlider";
 
 const Section = () => {
   return (
-    <div className="section-bg">
-      <div className="intro-container">
-        <div className="intro-image">
-          <img src={frontImage} alt="photo" />
+    <>
+      <div className="section-bg">
+        <div className="horoscope-heading">
+          <h1>Daily Hororsope</h1>
         </div>
-        <div className="intro-chat">
-          <h2>Demo Text</h2>
-          <h1>Chat with Astrologer</h1>
-          <button type="button">Chat Now</button>
-        </div>
-        <div className="intro-chat-option"></div>
+        <CardSlider />
       </div>
-    </div>
+      <div className="services-heading">
+        <h1>Astro Services</h1>
+      </div>
+      <Services />
+      <div className="astro-slider-bg">
+        <div className="astro-heading">
+          <h1>Top Astrologers</h1>
+          <a href="">see all>></a>
+        </div>
+        <AstroSlider />
+      </div>
+      <Faq />
+    </>
   );
 };
 
