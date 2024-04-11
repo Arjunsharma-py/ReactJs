@@ -30,7 +30,7 @@ a {
   align-items: center;
   padding: 0.5rem 1rem;
   background-color: white;
-  box-shadow: 0 10px 20px rgb(0 0 0 / 26%), 0 6px 6px rgba(0, 0, 0, 0.116);
+  box-shadow: 0px 7px 7px 2px #0000001a;
 }
 
 .navbar-links {
@@ -61,7 +61,7 @@ a {
 
 .navbar-links-container p,
 .navbar-menu-container p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 20px;
@@ -81,18 +81,17 @@ a {
 
 .navbar-button button,
 .navbar-menu-container-button button {
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
   border: 0px;
-  border-radius: 1rem;
+  border-radius: 2rem;
   color: white;
   font-weight: bolder;
-  font-size: 15px;
+  font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 25px;
   outline: none;
   cursor: pointer;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.096), 0 6px 6px rgba(0, 0, 0, 0.116);
   background-color: var(--yellow-color);
 }
 
@@ -155,9 +154,17 @@ a {
 
 .horoscope-heading {
   margin-bottom: 2rem;
-  color: white;
+  width: 80%;
   font-weight: 600;
   font-size: 20px;
+}
+
+.horoscope-heading h1 {
+  color: rgb(54, 54, 54);
+}
+
+.horoscope-heading h4 {
+  color: rgb(87, 87, 87);
 }
 
 /* ---------------------services------------------ */
@@ -223,7 +230,7 @@ a {
 
 .profile-card {
   border: 1px solid #ddd;
-  padding: 20px;
+  padding: 50px 20px;
   border-radius: 5px;
   width: 300px;
   text-align: center;
@@ -245,6 +252,7 @@ a {
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
+  margin-top: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -263,7 +271,7 @@ a {
   align-items: center;
   background-color: rgb(231, 231, 231);
   padding: 3rem 6rem;
-  margin: 4rem 0rem;
+  margin-top: 4rem;
 }
 
 .faq-section h2 {
@@ -288,7 +296,24 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 2rem;
+}
+
+.astro-heading {
+  display: flex;
+  width: 70rem;
+  align-items: end;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.astro-heading a {
+  color: rgb(0, 174, 255);
+  text-decoration: underline;
 }
 
 /* ------------------card-slider------------------ */
@@ -297,19 +322,25 @@ a {
   max-width: 1100px;
   width: 100%;
   position: relative;
+  padding: 5px 0px;
 }
 
 .zodiac-card {
-  height: 342px;
+  height: 345px;
+  width: 328px;
   list-style: none;
   background: #fff;
   padding-bottom: 15px;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.zodiac-card:hover {
+  height: 345px;
 }
 
 .zodiac-card .img {
@@ -334,12 +365,12 @@ a {
 }
 
 .zodiac-card button {
-  color: #6a6d78;
-  font-size: 1.2rem;
+  color: black;
+  font-size: 1rem;
   border: 1px solid yellow;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background-color: var(--yellow-color-hover);
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem 0.7rem;
 }
 
 /* responsive */
@@ -568,4 +599,68 @@ button {
   color: black;
   font-weight: 100;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------footer------------------------------ */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.footer .section {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Contact Us section with React icons */
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links h4 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.footer-list li {
+  margin-top: 10px;
+}
+
+.footer-list a {
+  font-size: 18px;
+  color: rgb(32, 32, 32);
+}
+
+.footer-list a:hover {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.social-icons svg {
+  font-size: 30px;
+  padding: 0.5rem;
+}
+
+.footer small {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer .section {
+    flex-basis: auto;
+  }
 }

@@ -15,7 +15,7 @@ const users = [
     image: profile_photo,
     skills: ["Numerology", "Tarot", "Psychic"],
     languages: ["Hindi", "English", "Spanish"],
-    Exp: 2,
+    exp: 2,
     price: 30,
   },
   {
@@ -24,7 +24,7 @@ const users = [
     image: profile_photo,
     skills: ["Numerology", "Tarot", "Psychic"],
     languages: ["Hindi", "English", "Spanish"],
-    Exp: 2,
+    exp: 2,
     price: 40,
   },
   {
@@ -33,7 +33,7 @@ const users = [
     image: profile_photo,
     skills: ["Numerology", "Tarot", "Psychic"],
     languages: ["Hindi", "English", "Spanish"],
-    Exp: 5,
+    exp: 5,
     price: 50,
   },
   {
@@ -42,7 +42,7 @@ const users = [
     image: profile_photo,
     skills: ["Numerology", "Tarot", "Psychic"],
     languages: ["Hindi", "English", "Spanish"],
-    Exp: 1,
+    exp: 1,
     price: 20,
   },
   {
@@ -51,13 +51,30 @@ const users = [
     image: profile_photo,
     skills: ["Numerology", "Tarot", "Psychic"],
     languages: ["Hindi", "English", "Spanish"],
-    Exp: 4,
+    exp: 4,
+    price: 80,
+  },
+  {
+    id: 6,
+    username: "fdLabeksh",
+    image: profile_photo,
+    skills: ["Numerology", "Tarot", "Psychic"],
+    languages: ["Hindi", "English", "Spanish"],
+    exp: 4,
+    price: 80,
+  },
+  {
+    id: 7,
+    username: "fdLabeksh",
+    image: profile_photo,
+    skills: ["Numerology", "Tarot", "Psychic"],
+    languages: ["Hindi", "English", "Spanish"],
+    exp: 4,
     price: 80,
   },
 ];
 
 const AstroSlider = () => {
-  console.log(users.map((user) => user.id + ":" + user.username));
   return (
     <div className="slider-wrapper">
       <Swiper
