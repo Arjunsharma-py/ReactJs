@@ -54,9 +54,9 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <a href="/">
+              <Link to="/">
                 <img src={logo} alt="logo" />
-              </a>
+              </Link>
             </div>
             <div className="navbar-links-container">
               <p>

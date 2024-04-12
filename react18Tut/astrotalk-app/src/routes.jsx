@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage";
 import ChatWithAstro from "./Pages/ChatWithAstro";
 import KundliMatching from "./Pages/KundliMatching";
 import Horoscope from "./Pages/Horoscope";
+import Book from "./components/Book";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,23 @@ const router = createBrowserRouter([
       {
         path: "kundli-matching",
         element: <KundliMatching />,
+      },
+      {
+        path: "book",
+        children: [
+          {
+            path: "hindu/:id",
+            element: <Book category={"Hindu"} />,
+          },
+          {
+            path: "islamic/:id",
+            element: <Book category={"Islamic"} />,
+          },
+          {
+            path: "chritian/:id",
+            element: <Book category={"Chritian"} />,
+          },
+        ],
       },
     ],
   },
