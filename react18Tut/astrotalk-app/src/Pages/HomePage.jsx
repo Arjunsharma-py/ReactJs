@@ -2,10 +2,12 @@ import CardSlider from "../components/CardSlider";
 import Services from "../components/Services";
 import Faq from "../components/Faq";
 import AstroSlider from "../components/AstroSlider";
+import Categories from "../components/Categories";
 
 const HomePage = () => {
   return (
     <>
+      <Categories />
       <div className="section-bg">
         <div className="horoscope-heading">
           <h1>Daily Hororsope</h1>
