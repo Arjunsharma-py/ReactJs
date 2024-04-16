@@ -3,6 +3,8 @@ import Services from "../components/Services";
 import Faq from "../components/Faq";
 import AstroSlider from "../components/AstroSlider";
 import Categories from "../components/Categories";
+import TrailerSlider from "../components/TrailerSlider";
+import { AiOutlineRight } from "react-icons/ai";
 
 const HomePage = () => {
   return (
@@ -18,6 +20,7 @@ const HomePage = () => {
         </div>
         <CardSlider />
       </div>
+      <TrailerSlider />
       <div className="services-heading">
         <h1>Astro Services</h1>
       </div>
@@ -25,7 +28,10 @@ const HomePage = () => {
       <div className="astro-slider-bg">
         <div className="astro-heading">
           <h1>Top Astrologers</h1>
-          <a href="">See all></a>
+          <a href="">
+            See all
+            <AiOutlineRight />
+          </a>
         </div>
         <AstroSlider />
       </div>
