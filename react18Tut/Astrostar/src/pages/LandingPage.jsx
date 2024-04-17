@@ -1,24 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { AiOutlineRight } from "react-icons/ai";
-import Header from "../components/header/header";
+import Header from "../components/header/Header";
 import SendEmail from "../components/SendEmail";
 import ImgContentBox from "../components/ImgContentBox";
 import astro_circle from "../assets/landing_page/astro_circle.png";
 import tv from "../assets/landing_page/tv.png";
 import Footer from "../components/footer/Footer";
+import { Link } from "react-router-dom";
+import { AiOutlineRight } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
+import WrappingBox from "../components/WrappingBox";
 
 const LandingPage = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
-      <div className="bg-img">
+      <div className="bg-img-main bg-img-common">
         <div className="connect-container">
-          <h1>Connect With Astrologer</h1>
-          <p>
-            Unveiling the cosmic mysteries, guiding you through lifes journey
-            with precision and insight.
-          </p>
+          <h1>{t("l_page_cover.title")}</h1>
+          <p>{t("l_page_cover.description")}</p>
           <SendEmail />
         </div>
       </div>
@@ -37,29 +38,31 @@ const LandingPage = () => {
       <ImgContentBox
         right={true}
         imgSrc={tv}
-        heading={"Live Streaming with Astrologer"}
-        para={
-          "Expore the celestial dance of planets and stars, unlocking the secrets of your destiny."
-        }
+        heading={t("boxes_content.box1.title")}
+        para={t("boxes_content.box1.description")}
       />
       <div className="hr-line" />
       <ImgContentBox
         right={false}
         imgSrc={tv}
-        heading={"Cultural Category"}
-        para={
-          "Navigate the cosmic landscape with confidence, as the planets whispher their tales in your birth chart."
-        }
+        heading={t("boxes_content.box2.title")}
+        para={t("boxes_content.box2.description")}
       />
       <div className="hr-line" />
       <ImgContentBox
         right={true}
         imgSrc={tv}
-        heading={"LLM based Products"}
-        para={
-          "Expore the celestial dance of planets and stars, unlocking the secrets of your destiny."
-        }
+        heading={t("boxes_content.box3.title")}
+        para={t("boxes_content.box3.description")}
       />
+      <div className="hr-line" />
+      <div className="faq-bg">
+        <div className="faq-container">
+          <h1>Frequently Asked Questions</h1>
+          <WrappingBox question={"what is Astrology"} />
+          <SendEmail />
+        </div>
+      </div>
       <div className="hr-line" />
       <Footer />
     </>

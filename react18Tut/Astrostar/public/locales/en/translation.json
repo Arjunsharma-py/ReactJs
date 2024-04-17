@@ -1,0 +1,46 @@
+{
+  "l_page_cover": {
+    "title": "Connect with Astrologers",
+    "description": "Unveiling the cosmic mysteries, guiding you through life's journey with precision and insight."
+  },
+  "boxes_content": {
+    "box1": {
+      "title": "Live Streaming with Astrologer",
+      "description": "Explore the celestial dance of planets and stars, unlocking the secrets of your destiny."
+    },
+    "box2": {
+      "title": "Cultural Category",
+      "description": "Navigate the cosmic landscape with confidence, as the planets whisper their tales in your birth chart."
+    },
+    "box3": {
+      "title": "LLM based Products",
+      "description": "Explore the celestial dance of planets and stars, unlocking the secrets of your destiny."
+    }
+  },
+  "ads": {
+    "ad1": {
+      "title": "The AstroStar you love for just $4.99.",
+      "description": "Get the Standard with ads plan",
+      "link": "Learn more"
+    }
+  },
+  "buttons": {
+    "sign_in": "Sign In",
+    "get_started": "Get Started"
+  },
+  "footer": {
+    "faq": "FAQ",
+    "t_h": "Today's Horoscope",
+    "t_l_h": "Today's love Horoscope",
+    "y_h": "Yesterday's Horoscope",
+    "to_h": "Tommorow's Horoscope",
+    "w_h": "Weekly Horoscope",
+    "m_h": "Monthly Horoscope",
+    "yl_h": "Yearly Horoscope",
+    "bl": "Blog",
+    "pl": "Planetary Transit 2024",
+    "ta": "Tarot",
+    "tc": "Terms & Condition",
+    "pp": "Privacy Policy"
+  }
+}

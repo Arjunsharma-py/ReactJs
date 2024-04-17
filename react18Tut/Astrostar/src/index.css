@@ -91,6 +91,29 @@ a {
   background-color: var(--grey-500);
 }
 
+.bg-img-common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+}
+
+.none {
+  display: none;
+}
+
+select {
+  padding: 0.4rem 1.4rem;
+  margin: 0 1.5vw;
+  border: 1px solid var(--t-white-15);
+  border-radius: 0.2rem;
+  background-color: var(--t-black-60);
+  color: var(--white);
+}
+
 /* --------------------header------------------------ */
 
 header {
@@ -120,33 +143,18 @@ header {
   flex-direction: row;
 }
 
-.navbar select {
-  padding: 0.4rem 1.4rem;
-  margin-right: 1.5vw;
-  border: 1px solid var(--t-white-15);
-  border-radius: 0.2rem;
-  background-color: var(--t-black-60);
-  color: var(--white);
-}
-
-.navbar button {
+.navbar a {
   padding: 0.4rem 1rem;
+  font-size: var(--xxs);
   border: 0px;
   border-radius: 0.2rem;
 }
 
 /* -----------landing-page-bg-img----------- */
 
-.bg-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 650px;
+.bg-img-main {
   background-image: radial-gradient(var(--t-black-60), var(--t-black-90)),
     url("./assets/landing_page/main_bg_img.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .connect-container {
@@ -230,12 +238,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 2rem;
+  margin: 0 2rem;
 }
 
 .ads-description h4,
-p,
-a {
+.ads-description p,
+.ads-description a {
   margin-top: 0.5rem;
 }
 
@@ -279,6 +287,60 @@ a {
 
 .tv-container-content h3 {
   font-size: var(--s);
+}
+
+/* -------------------------faq-------------------- */
+
+.faq-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 7vw;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* -------------------------Wrapping-box---------------- */
+
+.wrap-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  background-color: var(--grey-600t60);
+}
+
+.plus svg {
+  transform: rotate(45deg);
+  transition: 0.4s ease-in-out;
+}
+
+.multiply svg {
+  transition: 0.4s ease-in-out;
+}
+
+.ans-container {
+  width: 80%;
+  padding: 1rem 1rem;
+  margin-top: 0.2rem;
+  border-radius: 0.2rem;
+  background-color: var(--grey-600t60);
+}
+
+/* ---------------------signin-page--------------------- */
+
+.bg-img-signin {
+  background-image: radial-gradient(var(--t-black-30), var(--t-black-90)),
+    url("./assets/auth_page/auth_bg.png");
 }
 
 /* -------------------------footer---------------------- */
