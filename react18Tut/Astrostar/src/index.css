@@ -306,14 +306,23 @@ header {
   width: 100%;
 }
 
+.faq-container h1 {
+  margin-bottom: 2rem;
+}
+
+.faq-container .email-container {
+  margin-top: 2rem;
+}
+
 /* -------------------------Wrapping-box---------------- */
 
 .wrap-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   padding: 1rem 1rem;
+  margin: 0.2rem 0;
   cursor: pointer;
   border-radius: 0.2rem;
   background-color: var(--grey-600t60);
@@ -329,7 +338,7 @@ header {
 }
 
 .ans-container {
-  width: 80%;
+  width: 90%;
   padding: 1rem 1rem;
   margin-top: 0.2rem;
   border-radius: 0.2rem;

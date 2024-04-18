@@ -19,7 +19,7 @@
   },
   "ads": {
     "ad1": {
-      "title": "The AstroStar you love for just $4.99.",
+      "title": "The AstroStar you love for just",
       "description": "Get the Standard with ads plan",
       "link": "Learn more"
     }
@@ -28,17 +28,31 @@
     "sign_in": "Sign In",
     "get_started": "Get Started"
   },
+  "faq": {
+    "q1": "what is Astrology",
+    "a1": "demo",
+    "q2": "Why do People Believe in Astrology?",
+    "a2": "demo",
+    "q3": "How much time do you take to process these queries?",
+    "a3": "demo",
+    "q4": "Is the pricing same across all countries?",
+    "a4": "demo",
+    "q5": "Do you prescribe gemstones and yatras",
+    "a5": "demo",
+    "q6": "What sort of content do you provide",
+    "a6": "demo"
+  },
   "footer": {
     "faq": "FAQ",
     "t_h": "Today's Horoscope",
     "t_l_h": "Today's love Horoscope",
     "y_h": "Yesterday's Horoscope",
-    "to_h": "Tommorow's Horoscope",
+    "to_h": "Tomorrow's Horoscope",
     "w_h": "Weekly Horoscope",
     "m_h": "Monthly Horoscope",
     "yl_h": "Yearly Horoscope",
     "bl": "Blog",
-    "pl": "Planetary Transit 2024",
+    "pl": "Planetary Transit",
     "ta": "Tarot",
     "tc": "Terms & Condition",
     "pp": "Privacy Policy"

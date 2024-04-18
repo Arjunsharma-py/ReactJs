@@ -4,7 +4,13 @@ import { useTranslation } from "react-i18next";
 const languages = [
   { code: "en", lang: "English" },
   { code: "hi", lang: "हिंदी" },
+  { code: "ta", lang: "தமிழ்" },
   { code: "ar", lang: "عربي" },
+  { code: "es", lang: "Español" },
+  { code: "fr", lang: "Français" },
+  { code: "cmn", lang: "中國人" },
+  { code: "ja", lang: "日本語" },
+  { code: "ru", lang: "русский" },
 ];
 
 const MultiLingual = () => {

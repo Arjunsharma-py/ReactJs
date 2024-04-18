@@ -27,10 +27,11 @@ const LandingPage = () => {
         <div className="ads-banner">
           <img src={astro_circle} alt="astro-image" />
           <div className="ads-description">
-            <h4>The AstroStar you love for just $4.99.</h4>
-            <p>Get the Standard with ads plan</p>
+            <h4>{t("ads.ad1.title")} $4.99.</h4>
+            <p>{t("ads.ad1.description")}</p>
             <Link to="/">
-              Learn more <AiOutlineRight />
+              {t("ads.ad1.link")}
+              <AiOutlineRight />
             </Link>
           </div>
         </div>
@@ -59,7 +60,12 @@ const LandingPage = () => {
       <div className="faq-bg">
         <div className="faq-container">
           <h1>Frequently Asked Questions</h1>
-          <WrappingBox question={"what is Astrology"} />
+          <WrappingBox question={t("faq.q1")} answer={t("faq.a1")} />
+          <WrappingBox question={t("faq.q2")} answer={t("faq.a2")} />
+          <WrappingBox question={t("faq.q3")} answer={t("faq.a3")} />
+          <WrappingBox question={t("faq.q4")} answer={t("faq.a4")} />
+          <WrappingBox question={t("faq.q5")} answer={t("faq.a5")} />
+          <WrappingBox question={t("faq.q6")} answer={t("faq.a6")} />
           <SendEmail />
         </div>
       </div>

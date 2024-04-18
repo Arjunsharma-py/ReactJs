@@ -1,0 +1,60 @@
+{
+  "l_page_cover": {
+    "title": "Conéctese con astrólogos",
+    "description": "Revelando los misterios cósmicos, guiándote a través del viaje de la vida con precisión y perspicacia."
+  },
+  "boxes_content": {
+    "box1": {
+      "title": "Transmisión en vivo con astrólogo",
+      "description": "Explora la danza celestial de planetas y estrellas, descubriendo los secretos de tu destino."
+    },
+    "box2": {
+      "title": "Categoría cultural",
+      "description": "Navega por el paisaje cósmico con confianza, mientras los planetas susurran sus historias en tu carta natal."
+    },
+    "box3": {
+      "title": "Productos basados ​​en LLM",
+      "description": "Explora la danza celestial de planetas y estrellas, descubriendo los secretos de tu destino."
+    }
+  },
+  "ads": {
+    "ad1": {
+      "title": "El AstroStar que amas por solo",
+      "description": "Obtén el plan Estándar con anuncios",
+      "link": "Aprende más"
+    }
+  },
+  "buttons": {
+    "sign_in": "Iniciar sesión",
+    "get_started": "Empezar"
+  },
+  "faq": {
+    "q1": "que es la astrología",
+    "a1": "manifestación",
+    "q2": "¿Por qué la gente cree en la astrología?",
+    "a2": "manifestación",
+    "q3": "¿Cuánto tiempo os lleva procesar estas consultas?",
+    "a3": "manifestación",
+    "q4": "¿El precio es el mismo en todos los países?",
+    "a4": "manifestación",
+    "q5": "¿Recetas piedras preciosas y yatras?",
+    "a5": "manifestación",
+    "q6": "¿Qué tipo de contenido proporcionas?",
+    "a6": "manifestación"
+  },
+  "footer": {
+    "faq": "Preguntas más frecuentes",
+    "t_h": "Horóscopo de hoy",
+    "t_l_h": "Horóscopo del amor de hoy",
+    "y_h": "Horóscopo de ayer",
+    "to_h": "Horóscopo de mañana",
+    "w_h": "Horóscopo Semanal",
+    "m_h": "Horóscopo Mensual",
+    "yl_h": "Horóscopo anual",
+    "bl": "Blog",
+    "pl": "Tránsito planetario",
+    "ta": "tarot",
+    "tc": "Términos",
+    "pp": "política de privacidad"
+  }
+}

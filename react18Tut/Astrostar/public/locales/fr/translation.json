@@ -1,0 +1,60 @@
+{
+  "l_page_cover": {
+    "title": "Connectez-vous avec des astrologues",
+    "description": "Dévoilant les mystères cosmiques, vous guidant tout au long du voyage de la vie avec précision et perspicacité."
+  },
+  "boxes_content": {
+    "box1": {
+      "title": "Diffusion en direct avec l'astrologue",
+      "description": "Explorez la danse céleste des planètes et des étoiles et découvrez les secrets de votre destin."
+    },
+    "box2": {
+      "title": "Catégorie culturelle",
+      "description": "Naviguez dans le paysage cosmique en toute confiance, alors que les planètes murmurent leurs histoires dans votre thème natal."
+    },
+    "box3": {
+      "title": "Produits basés sur le LLM",
+      "description": "Explorez la danse céleste des planètes et des étoiles et découvrez les secrets de votre destin."
+    }
+  },
+  "ads": {
+    "ad1": {
+      "title": "L'AstroStar que vous aimez pour",
+      "description": "Obtenez le forfait Standard avec annonces",
+      "link": "Apprendre encore plus"
+    }
+  },
+  "buttons": {
+    "sign_in": "Se connecter",
+    "get_started": "Commencer"
+  },
+  "faq": {
+    "q1": "qu'est-ce que l'astrologie",
+    "a1": "démo",
+    "q2": "Pourquoi les gens croient-ils à l’astrologie ?",
+    "a2": "démo",
+    "q3": "Combien de temps prenez-vous pour traiter ces requêtes ?",
+    "a3": "démo",
+    "q4": "Le prix est-il le même dans tous les pays ?",
+    "a4": "démo",
+    "q5": "Prescrivez-vous des pierres précieuses et des yatras",
+    "a5": "démo",
+    "q6": "Quel type de contenu proposez-vous",
+    "a6": "démo"
+  },
+  "footer": {
+    "faq": "FAQ",
+    "t_h": "L'horoscope du jour",
+    "t_l_h": "Horoscope amoureux du jour",
+    "y_h": "L'horoscope d'hier",
+    "to_h": "L'horoscope de demain",
+    "w_h": "Horoscope hebdomadaire",
+    "m_h": "Horoscope mensuel",
+    "yl_h": "Horoscope annuel",
+    "bl": "Blog",
+    "pl": "Transit planétaire",
+    "ta": "Tarot",
+    "tc": "Termes",
+    "pp": "politique de confidentialité"
+  }
+}

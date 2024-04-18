@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer>
       <div className="footer">
@@ -10,44 +12,44 @@ const Footer = () => {
           </h4>
           <ul className="footer-list">
             <li>
-              <a href="today's Horoscope">FAQ</a>
+              <a href="today's Horoscope">{t("footer.faq")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Today's Horoscope</a>
+              <a href="today's Horoscope">{t("footer.t_h")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Today's Love Horoscope</a>
+              <a href="today's Horoscope">{t("footer.t_l_h")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Yesterday's Horoscope</a>
+              <a href="today's Horoscope">{t("footer.y_h")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Tomorrow's Horoscope</a>
+              <a href="today's Horoscope">{t("footer.to_h")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Weekly's Horoscope</a>
+              <a href="today's Horoscope">{t("footer.w_h")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Monthly's Horoscope</a>
+              <a href="today's Horoscope">{t("footer.m_h")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Yearly's Horoscope</a>
+              <a href="today's Horoscope">{t("footer.yl_h")}</a>
             </li>
           </ul>
         </div>
         <div className="section links">
           <ul className="footer-list">
             <li>
-              <a href="today's Horoscope">Blog</a>
+              <a href="today's Horoscope">{t("footer.bl")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Panetary Transit 2024</a>
+              <a href="today's Horoscope">{t("footer.pl")}2024</a>
             </li>
             <li>
-              <a href="today's Horoscope">Collaboration</a>
+              <a href="today's Horoscope">{t("footer.ta")}</a>
             </li>
             <li>
-              <a href="today's Horoscope">Tarot</a>
+              <a href="today's Horoscope">{t("footer.tc")}</a>
             </li>
           </ul>
         </div>
