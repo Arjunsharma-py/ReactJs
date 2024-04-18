@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import VideoPlayer from "../components/VideoPlayer";
+import SwitchBox from "../components/SwitchBox";
 
 const SigninPage = () => {
+  const [playerObj, setPlayerObj] = useState({
+    isPlaying: false,
+    currentTime: 0,
+  });
+
   return (
     <>
       <Header />
       <div className="bg-img-signin bg-img-common">
-        <div className="connect-container">
-          <h1>Connect With Astrologer</h1>
-          <p>
-            Unveiling the cosmic mysteries, guiding you through lifes journey
-            with precision and insight.
-          </p>
-        </div>
+        <VideoPlayer
+          playerObj={playerObj}
+          setPlayerObj={(isPlaying, currentTime) =>
+            setPlayerObj({ isPlaying, currentTime })
+          }
+        />
+        {!playerObj.isPlaying && <SwitchBox />}
       </div>
       <Footer />
     </>

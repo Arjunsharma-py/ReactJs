@@ -114,6 +114,10 @@ select {
   color: var(--white);
 }
 
+li {
+  list-style: none;
+}
+
 /* --------------------header------------------------ */
 
 header {
@@ -350,6 +354,46 @@ header {
 .bg-img-signin {
   background-image: radial-gradient(var(--t-black-30), var(--t-black-90)),
     url("./assets/auth_page/auth_bg.png");
+}
+
+/* -------------------------video-player------------------- */
+
+.video-container video {
+  width: 65vw;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 30px 15px var(--t-black-60);
+}
+
+/* -------------------------switch-box------------------------- */
+
+.switch-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20vw;
+  width: 200px;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  background-color: var(--t-black-60);
+}
+
+.tabs button {
+  width: 50%;
+  padding: 0.5rem 0;
+  border: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.active {
+  border-bottom: 1px solid var(--red) !important;
+}
+
+/* --------------------Characters-Cast------------- */
+.char-container,
+.cast-container {
+  padding: 0.5rem;
 }
 
 /* -------------------------footer---------------------- */

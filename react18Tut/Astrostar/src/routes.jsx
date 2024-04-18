@@ -3,6 +3,12 @@ import MainLayout from "./layouts/MainLayout";
 import LandingPage from "./pages/LandingPage";
 import SigninPage from "./pages/SigninPage";
 
+function userRedirect(nextState, replace) {
+  const defaultLanguage = "en";
+  const redirectPath = `/${defaultLanguage}${nextState.location.pathname}`;
+  replace({ pathname: redirectPath });
+}
+
 const routes = createBrowserRouter([
   {
     path: "/",
