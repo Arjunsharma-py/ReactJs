@@ -20,7 +20,9 @@ const SigninPage = () => {
             setPlayerObj({ isPlaying, currentTime })
           }
         />
-        {!playerObj.isPlaying && <SwitchBox />}
+        <div className="video-details">
+          {!playerObj.isPlaying && <SwitchBox />}
+        </div>
       </div>
       <Footer />
     </>

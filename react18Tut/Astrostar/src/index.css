@@ -356,6 +356,13 @@ header {
     url("./assets/auth_page/auth_bg.png");
 }
 
+.video-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
 /* -------------------------video-player------------------- */
 
 .video-container video {
@@ -369,7 +376,6 @@ header {
 .switch-box {
   display: flex;
   flex-direction: column;
-  position: absolute;
   right: 20vw;
   width: 200px;
   border-radius: 0.2rem;
@@ -394,6 +400,16 @@ header {
 .char-container,
 .cast-container {
   padding: 0.5rem;
+}
+
+.casts {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+
+.casts img {
+  margin: 0rem 0.5rem;
 }
 
 /* -------------------------footer---------------------- */
